@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaptopHaven</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body>
+    <!-- Include the top navigation bar and bottom navigation bar here -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block">
+        <div class="container text-light">
+            <div class="w-100 d-flex justify-content-between">
+                <div>
+                    <i class="fa-solid fa-envelope mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@company.com">Laptophaven@gmail.com</a>
+                    <i class="fa-solid fa-phone mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:010-020-0340">09876543210</a>
+                </div>
+                <div>
+                    <a class="text-light" href="https://www.facebook.com/" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-sm fa-fw"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+<!-- Start Bottom Nav -->
+<div class="container justify-content-between">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container d-flex justify-content-between"> <!-- Wrap in a flex container and use justify-content-between -->
+            <a class="navbar-brand text-success" href="index.html"><img src="img/LAPTOPHAVENLOGO.png" alt="" id="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./compare.html">Compare</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./cart.html">Cart</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </div>
+
+    <!-- Comparison Section -->
+    
+<!-- ========================================================================     -->
+
+<div class="row">
+    <div class="col-md-6">
+        <select id="product-options-left" class="form-select">
+            <option value="">Select a product</option>
+        </select>
+    </div>
+    <div class="col-md-6">
+        <select id="product-options-right" class="form-select">
+            <option value="">Select a product</option>
+        </select>
+    </div>
+</div>
+
+
+
+
+
+
+    <!-- Comparison Result Section -->
+    <section class="comparison-result-section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Comparison Result</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="product1-details" class="product-details">
+                        <!-- Product 1 details will be displayed here -->
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="product2-details" class="product-details">
+                        <!-- Product 2 details will be displayed here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <script>
+            const productOptionsElementLeft = document.getElementById('product-options-left');
+const productOptionsElementRight = document.getElementById('product-options-right');
+const productDetailsElement1 = document.getElementById('product1-details');
+const productDetailsElement2 = document.getElementById('product2-details');
+
+const xhr = new XMLHttpRequest();
+xhr.open('GET', './laptop.json', true);
+xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+        const laptopData = JSON.parse(xhr.responseText);
+
+        // Populate product options for left select
+        laptopData.laptops.forEach((laptop) => {
+            const option = document.createElement('option');
+            option.value = laptop.laptop_name;
+            option.textContent = laptop.laptop_name;
+            productOptionsElementLeft.appendChild(option);
+        });
+
+        // Populate product options for right select
+        laptopData.laptops.forEach((laptop) => {
+            const option = document.createElement('option');
+            option.value = laptop.laptop_name;
+            option.textContent = laptop.laptop_name;
+            productOptionsElementRight.appendChild(option);
+        });
+
+        // Update product details on selection change
+        productOptionsElementLeft.addEventListener('change', () => {
+            const selectedLaptopName = productOptionsElementLeft.value;
+            const selectedLaptop = laptopData.laptops.find(laptop => laptop.laptop_name === selectedLaptopName);
+            displayProductDetails(selectedLaptop, productDetailsElement1);
+        });
+
+        productOptionsElementRight.addEventListener('change', () => {
+            const selectedLaptopName = productOptionsElementRight.value;
+            const selectedLaptop = laptopData.laptops.find(laptop => laptop.laptop_name === selectedLaptopName);
+            displayProductDetails(selectedLaptop, productDetailsElement2);
+        });
+    }
+};
+xhr.send();
+
+function displayProductDetails(laptop, detailsElement) {
+    if (laptop) {
+        const detailsTable = document.createElement('table');
+        detailsTable.className = 'table table-bordered';
+
+       // Create a row for the image
+const imageRow = detailsTable.insertRow();
+const imageCell = imageRow.insertCell(0);
+imageCell.colSpan = 2; // Span both cells
+imageCell.className = 'text-center'; // Apply text-center class for centering
+const imageElement = document.createElement('img');
+imageElement.src = laptop.image_url;
+imageElement.alt = laptop.laptop_name;
+imageElement.className = 'product-image'; // Apply styling if needed
+imageElement.style.width = '400px';
+imageElement.style.height = '400px';
+imageCell.appendChild(imageElement);
+
+
+        // Loop through the properties of tech_specs and display them
+        if (laptop.tech_specs) {
+            for (const key in laptop.tech_specs) {
+                if (laptop.tech_specs.hasOwnProperty(key)) {
+                    const row = detailsTable.insertRow();
+                    const cell1 = row.insertCell(0);
+                    const cell2 = row.insertCell(1);
+                    cell1.textContent = key.replace(/_/g, ' ');
+                    cell2.textContent = laptop.tech_specs[key];
+                }
+            }
+        }
+
+        // Handle the "inclusions" property
+        if (laptop.inclusions && laptop.inclusions.length > 0) {
+            const row = detailsTable.insertRow();
+            const cell1 = row.insertCell(0);
+            const cell2 = row.insertCell(1);
+            cell1.textContent = 'Inclusions';
+            cell2.textContent = laptop.inclusions.join(', ');
+        }
+
+        // Clear previous details and append the new table
+        detailsElement.innerHTML = '';
+        detailsElement.appendChild(detailsTable);
+    } else {
+        // Clear details if no laptop is selected
+        detailsElement.innerHTML = '';
+    }
+}
+
+
+
+
+
+        </script>
+
+
+
+
+    <script src="scripts.js"></script>
+    
+
+    
+    <footer class="bg-dark" id="">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">LaptopHaven</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                            Legazpi, Albay, Philippines
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a class="text-decoration-none white" href="#">09999999999</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none white" href="#">LaptopHaven@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light text-white">Brands</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none white" href="#">Acer</a></li>
+                        <li><a class="text-decoration-none white" href="#">Asus</a></li>
+                        <li><a class="text-decoration-none white" href="#">ROG</a></li>
+                        <li><a class="text-decoration-none white" href="#">CHUWI</a></li>
+                        <li><a class="text-decoration-none white" href="#">HP</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none white" href="#">Home</a></li>
+                        <li><a class="text-decoration-none white" href="./about.html">About Us</a></li>
+                        <li><a class="text-decoration-none white" href="#">Shop Locations</a></li>
+                        <li><a class="text-decoration-none white" href="#">FAQs</a></li>
+                        <li><a class="text-decoration-none white" href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row text-light mb-4">
+                <div class="col-12 mb-3">
+                    <div class="w-100 my-3 border-top border-light"></div>
+                </div>
+                <div class="col-auto me-auto">
+                    <ul class="list-inline text-left footer-icons">
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i class="fab fa-twitter fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-auto">
+                    <label class="sr-only" for="">Email address</label>
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control bg-secondary border-light" id="" placeholder="Email address">
+                        <div class="input-group-text btn btn-success text-light">Subscribe</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-100 bg-black py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-light">
+                            Copyright &copy; 2023 LaptopHaven
+                            | Designed by N&C Corporation
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+   
+</body>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaptopHaven</title>
+
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+
+</head>
+<body>
+    <!-- Start Top Nav -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block">
+        <div class="container text-light">
+            <div class="w-100 d-flex justify-content-between">
+                <div>
+                    <i class="fa-solid fa-envelope mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@company.com">Laptophaven@gmail.com</a>
+                    <i class="fa-solid fa-phone mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:010-020-0340">09876543210</a>
+                </div>
+                <div>
+                    <a class="text-light" href="https://www.facebook.com/" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-sm fa-fw"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Close Top Nav -->
+    <!-- Start Bottom Nav -->
+    <div class="container justify-content-between">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container d-flex justify-content-between"> <!-- Wrap in a flex container and use justify-content-between -->
+                <a class="navbar-brand text-success" href="index.html"><img src="img/LAPTOPHAVENLOGO.png" alt="" id="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./compare.html">Compare</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./cart.html">Cart</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    
+    <!-- Close Bottom Nav -->
+    <div class="containerr mt-5">
+        <h1 class="mb-4">Shopping Cart</h1>
+        
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Product</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-table-body">
+                    <!-- Cart items will be displayed here -->
+                </tbody>
+            </table>
+        </div>
+        
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const tableBody = document.getElementById("cart-table-body");
+                const cartDataString = localStorage.getItem("cart") || '';
+                const cartItems = JSON.parse(cartDataString) || [];
+        
+                // Create a map to store product quantities
+                const productQuantityMap = {};
+        
+                // Count product quantities
+                cartItems.forEach((product) => {
+                    productQuantityMap[product] = (productQuantityMap[product] || 0) + 1;
+                });
+        
+                Object.keys(productQuantityMap).forEach((product, index) => {
+                    const row = document.createElement("tr");
+                    row.innerHTML = `
+                        <th scope="row">${index + 1}</th>
+                        <td>${product}</td>
+                        <td>---</td>
+                        <td>${productQuantityMap[product]}</td>
+                        <td>---</td>
+                        <td><button onclick="removeItem('${product}')">Remove</button></td>
+                    `;
+                    tableBody.appendChild(row);
+                });
+            });
+        
+            function removeItem(product) {
+                const cartDataString = localStorage.getItem("cart") || '';
+                const cartItems = JSON.parse(cartDataString) || [];
+        
+                // Remove the first occurrence of the product
+                const productIndex = cartItems.indexOf(product);
+                if (productIndex !== -1) {
+                    cartItems.splice(productIndex, 1);
+                    localStorage.setItem("cart", JSON.stringify(cartItems));
+                    location.reload();
+                }
+            }
+        </script>
+        
+        
+        
+        
+        
+
+        <div class="text-start">
+            <button class="btn btn-primary mt-3" id="continue-shopping-btn">Continue Shopping</button>
+        </div>
+        
+        <div class="text-end">
+            <h4>Total: <span id="cart-total"></span></h4>
+            <button class="btn btn-primary mt-3" id="checkout-btn"><a href="checkout.html" class="text-white text-decoration-none">Checkout</a></button>
+        </div>
+        
+        <div class="text-end">
+            <button class="btn btn-danger mt-3" id="remove-all-btn">Remove All Products</button>
+        </div>
+    </div>
+
+    
+      <script>
+        const quantityInputs = document.querySelectorAll('.quantity');
+        const removeButtons = document.querySelectorAll('.remove-btn');
+        const cartTotalElement = document.getElementById('cart-total');
+      
+        quantityInputs.forEach((input, index) => {
+          input.addEventListener('input', () => {
+            updateTotal(index);
+          });
+
+          // pangbawas (-) na button
+          const decrementBtn = document.createElement('button');
+          decrementBtn.textContent = '-';
+          decrementBtn.classList.add('btn', 'btn-sm', 'btn-primary');
+          decrementBtn.addEventListener('click', () => {
+            if (quantityInputs[index].value > 1) {
+              quantityInputs[index].value--;
+              updateTotal(index);
+            }
+          });
+
+          // pangdagdag (+) na button
+          const incrementBtn = document.createElement('button');
+          incrementBtn.textContent = '+';
+          incrementBtn.classList.add('btn', 'btn-sm', 'btn-primary', 'mr-2');
+          incrementBtn.addEventListener('click', () => {
+            quantityInputs[index].value++;
+            updateTotal(index);
+          });
+
+          
+          input.parentNode.appendChild(decrementBtn);
+          input.parentNode.appendChild(incrementBtn);
+          
+        });
+
+        removeButtons.forEach((button, index) => {
+          button.addEventListener('click', () => {
+            removeProduct(index);
+          });
+        });
+
+        function updateTotal(index) {
+  const priceText = document.querySelectorAll('.table td:nth-child(3)')[index].textContent;
+  const priceRegex = /([\d.,]+)/; // Regular expression to match numbers with commas and decimals
+  const matches = priceText.match(priceRegex);
+
+  if (matches) {
+    const priceString = matches[0].replace(/,/g, ''); // Remove existing commas
+    const price = parseFloat(priceString);
+    const quantity = parseInt(quantityInputs[index].value);
+    const totalElement = document.querySelectorAll('.total')[index];
+    const newTotal = (price * quantity).toFixed(2);
+
+    
+    totalElement.textContent = `₱${parseFloat(newTotal).toLocaleString('en-PH', { minimumFractionDigits: 2 })}`;
+
+    let cartTotal = 0;
+    document.querySelectorAll('.total').forEach((total) => {
+      const totalText = total.textContent;
+      const totalMatches = totalText.match(priceRegex);
+      if (totalMatches) {
+        const totalString = totalMatches[0].replace(/,/g, ''); // Remove existing commas
+        cartTotal += parseFloat(totalString);
+      }
+    });
+    
+    cartTotalElement.textContent = `₱${parseFloat(cartTotal.toFixed(2)).toLocaleString('en-PH', { minimumFractionDigits: 2 })}`;
+  }
+}
+
+
+
+
+
+        function removeProduct(index) {
+          const row = document.querySelectorAll('.table tbody tr')[index];
+          row.parentNode.removeChild(row);
+          updateTotal(index); // Recalculate the total after removing the product
+        }
+
+        const removeAllButton = document.getElementById('remove-all-btn');
+        removeAllButton.addEventListener('click', () => {
+          // Display a confirmation modal here
+          if (confirm('Are you sure you want to remove all products from the cart?')) {
+            removeAllProducts();
+          }
+        });
+
+        function removeAllProducts() {
+          const tbody = document.querySelector('.table tbody');
+          tbody.innerHTML = ''; // Remove all rows from the tbody
+          cartTotalElement.textContent = '₱0.00'; // Reset the total
+        }
+
+        const continueShoppingButton = document.getElementById('continue-shopping-btn');
+        continueShoppingButton.addEventListener('click', () => {
+          
+          window.location.href = 'shop.html';
+        });
+
+        
+
+
+      </script>
+<script>
+    
+
+function updateCartContent() {
+    const cartTable = document.getElementById('cart-table');
+    cartTable.innerHTML = ''; // Clear previous content
+
+    // Get items from local storage
+    const items = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+    items.forEach((item, index) => {
+        // Create a new table row and cells
+        const row = cartTable.insertRow();
+        const numCell = row.insertCell(0);
+        const productCell = row.insertCell(1);
+        const priceCell = row.insertCell(2);
+       
+
+        // Populate the cells with item details
+        numCell.textContent = index + 1;
+        productCell.innerHTML = `
+            <img src="${item.image_url}" alt="${item.laptop_name}" class="img-thumbnail" style="max-width: 100px;">
+            ${item.laptop_name}
+        `;
+        priceCell.textContent = item.price.original_price;
+
+        // ... Populate other cells
+    });
+}
+
+// Call the function when the page loads
+window.onload = () => {
+    updateCartContent();
+};
+
+</script>
+
+
+
+
+
+
+      <script src="scripts.js"></script>
+    <!-- End Footer -->
+
+    <footer class="bg-dark" id="">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">LaptopHaven</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                            Legazpi, Albay, Philippines
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a class="text-decoration-none white" href="#">09999999999</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none white" href="#">LaptopHaven@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light text-white">Brands</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none white" href="#">Acer</a></li>
+                        <li><a class="text-decoration-none white" href="#">Asus</a></li>
+                        <li><a class="text-decoration-none white" href="#">ROG</a></li>
+                        <li><a class="text-decoration-none white" href="#">CHUWI</a></li>
+                        <li><a class="text-decoration-none white" href="#">HP</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none white" href="#">Home</a></li>
+                        <li><a class="text-decoration-none white" href="./about.html">About Us</a></li>
+                        <li><a class="text-decoration-none white" href="#">Shop Locations</a></li>
+                        <li><a class="text-decoration-none white" href="#">FAQs</a></li>
+                        <li><a class="text-decoration-none white" href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row text-light mb-4">
+                <div class="col-12 mb-3">
+                    <div class="w-100 my-3 border-top border-light"></div>
+                </div>
+                <div class="col-auto me-auto">
+                    <ul class="list-inline text-left footer-icons">
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i class="fab fa-twitter fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-auto">
+                    <label class="sr-only" for="">Email address</label>
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control bg-secondary border-light" id="" placeholder="Email address">
+                        <div class="input-group-text btn btn-success text-light">Subscribe</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-100 bg-black py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-light">
+                            Copyright &copy; 2023 LaptopHaven
+                            | Designed by N&C Corporation
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

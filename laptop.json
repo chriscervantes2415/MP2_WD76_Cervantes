@@ -1,0 +1,523 @@
+{
+  "laptops": [
+    {
+      "laptop_name": "Lenovo Yoga Slim 7 Carbon 14ACN6 82L00024PH",
+      "laptop_type": "Premium",
+      "image_url": "./laptops/premium laptop/Lenovo Yoga Slim 7 Carbon 14ACN6 82L00024PH MS.png",
+      "tech_specs": {
+        "model_name": "Lenovo Yoga Slim 7 Carbon 14ACN6 82L00024PH",
+        "processor": "AMD Ryzen™ 5 5600U",
+        "RAM": "16GB Soldered LPDDR4x-4266",
+        "storage": "512GB SSD M.2",
+        "graphics": "Integrated AMD Radeon™ Graphics",
+        "display_size": "14″ 2.8K OLED",
+        "operating_system": "Windows® 11 Home Single Language",
+        "keyboard": "Backlit",
+        "ports": [
+          "1x USB-C® 3.2 Gen 1 (support data transfer only)",
+          "2x USB-C® 3.2 Gen 2 (support data transfer, Power Delivery 3.0 and DisplayPort™ 1.4)",
+          "1x Headphone / microphone combo jack (3.5mm)"
+        ]
+      },
+      "inclusions": [
+        "Lenovo Backpack",
+        "MS Office Home & Student 2021"
+      ],
+      "warranty": {
+        "replacement_period": "Seven (7) Days",
+        "manufacturer_warranty": "Two (2) Years"
+      },
+      "price": {
+        "original_price": "₱62,000.00",
+        "sale_price": "₱60,500.00"
+      }
+    },
+    {
+      "laptop_name": "Lenovo Yoga Slim 7 Carbon 14ACN6 82L00024PH1",
+      "laptop_type": "Premium",
+      "image_url": "./laptops/premium laptop/Lenovo Yoga Slim 7 Carbon 14ACN6 82L00024PH MS.png",
+      "tech_specs": {
+        "model_name": "Lenovo Yoga Slim 7 Carbon 14ACN6 82L00024PH",
+        "processor": "AMD Ryzen™ 5 5600U",
+        "RAM": "16GB Soldered LPDDR4x-4266",
+        "storage": "512GB SSD M.2",
+        "graphics": "Integrated AMD Radeon™ Graphics",
+        "display_size": "14″ 2.8K OLED",
+        "operating_system": "Windows® 11 Home Single Language",
+        "keyboard": "Backlit",
+        "ports": [
+          "1x USB-C® 3.2 Gen 1 (support data transfer only)",
+          "2x USB-C® 3.2 Gen 2 (support data transfer, Power Delivery 3.0 and DisplayPort™ 1.4)",
+          "1x Headphone / microphone combo jack (3.5mm)"
+        ]
+      },
+      "inclusions": [
+        "Lenovo Backpack",
+        "MS Office Home & Student 2021"
+      ],
+      "warranty": {
+        "replacement_period": "Seven (7) Days",
+        "manufacturer_warranty": "Two (2) Years"
+      },
+      "price": {
+        "original_price": "₱62,000.00",
+        "sale_price": "₱60,500.00"
+      }
+    },
+    {
+      "laptop_name": "HP Envy X360 Laptop 13-BF0109TU",
+      "laptop_type": "Premium",
+      "image_url": "./laptops/premium laptop/HP Envy X360 Laptop 13-BF0109TU.png",
+      "tech_specs": {
+        "model_name": "Hp Envy x360 2in1 Laptop 13-bf0109TU",
+        "processor": "Intel Core i7-1250U",
+        "RAM": "16 GB LPDDR4x-4266 MHz RAM",
+        "storage": "512 GB PCIe Gen4 NVMe TLC M.2 SSD",
+        "graphics": "Intel Iris Xᵉ Graphics",
+        "display_size": "13.3″ WQXGA IPS, multitouch-enabled",
+        "operating_system": "Windows 11 Home",
+        "ports": [
+          "2x Thunderbolt 4 with USB4 Type-C 40Gbps signaling rate (USB Power Delivery, DisplayPort 1.4, HP Sleep and Charge)",
+          "1x 1 SuperSpeed USB Type-A 10Gbps signaling rate (HP Sleep and Charge)",
+          "1x SuperSpeed USB Type-A 10Gbps signaling rate",
+          "1x headphone/microphone"
+        ]
+      },
+      "inclusions": [
+        "HP Backpack",
+        "MS Office Home and Student 2021",
+        "Rechargeable Pen"
+      ],
+      "warranty": {
+        "replacement_period": "Seven (7) Days",
+        "manufacturer_warranty": "Two (2) Years"
+      },
+      "price": {
+        "original_price": "₱75,000.00"
+      }
+    },
+    {
+      "laptop_name": "HP Envy X360 Laptop 13-BF0109TU1",
+      "laptop_type": "Premium",
+      "image_url": "./laptops/premium laptop/HP Envy X360 Laptop 13-BF0109TU.png",
+      "tech_specs": {
+        "model_name": "Hp Envy x360 2in1 Laptop 13-bf0109TU",
+        "processor": "Intel Core i7-1250U",
+        "RAM": "16 GB LPDDR4x-4266 MHz RAM",
+        "storage": "512 GB PCIe Gen4 NVMe TLC M.2 SSD",
+        "graphics": "Intel Iris Xᵉ Graphics",
+        "display_size": "13.3″ WQXGA IPS, multitouch-enabled",
+        "operating_system": "Windows 11 Home",
+        "ports": [
+          "2x Thunderbolt 4 with USB4 Type-C 40Gbps signaling rate (USB Power Delivery, DisplayPort 1.4, HP Sleep and Charge)",
+          "1x 1 SuperSpeed USB Type-A 10Gbps signaling rate (HP Sleep and Charge)",
+          "1x SuperSpeed USB Type-A 10Gbps signaling rate",
+          "1x headphone/microphone"
+        ]
+      },
+      "inclusions": [
+        "HP Backpack",
+        "MS Office Home and Student 2021",
+        "Rechargeable Pen"
+      ],
+      "warranty": {
+        "replacement_period": "Seven (7) Days",
+        "manufacturer_warranty": "Two (2) Years"
+      },
+      "price": {
+        "original_price": "₱75,000.00"
+      }
+    },
+    {
+      "laptop_name": "Lenovo Yoga Slim 7 Carbon 14ACN6 82L00024PH1",
+      "laptop_type": "Premium",
+      "image_url": "./laptops/premium laptop/Lenovo Yoga Slim 7 Carbon 14ACN6 82L00024PH MS.png",
+      "tech_specs": {
+        "model_name": "Lenovo Yoga Slim 7 Carbon 14ACN6 82L00024PH",
+        "processor": "AMD Ryzen™ 5 5600U",
+        "RAM": "16GB Soldered LPDDR4x-4266",
+        "storage": "512GB SSD M.2",
+        "graphics": "Integrated AMD Radeon™ Graphics",
+        "display_size": "14″ 2.8K OLED",
+        "operating_system": "Windows® 11 Home Single Language",
+        "keyboard": "Backlit",
+        "ports": [
+          "1x USB-C® 3.2 Gen 1 (support data transfer only)",
+          "2x USB-C® 3.2 Gen 2 (support data transfer, Power Delivery 3.0 and DisplayPort™ 1.4)",
+          "1x Headphone / microphone combo jack (3.5mm)"
+        ]
+      },
+      "inclusions": [
+        "Lenovo Backpack",
+        "MS Office Home & Student 2021"
+      ],
+      "warranty": {
+        "replacement_period": "Seven (7) Days",
+        "manufacturer_warranty": "Two (2) Years"
+      },
+      "price": {
+        "original_price": "₱62,000.00",
+        "sale_price": "₱60,500.00"
+      }
+    },
+    {
+      "laptop_name": "HP Envy X360 Laptop 13-BF0109TU1",
+      "laptop_type": "Premium",
+      "image_url": "./laptops/premium laptop/HP Envy X360 Laptop 13-BF0109TU.png",
+      "tech_specs": {
+        "model_name": "Hp Envy x360 2in1 Laptop 13-bf0109TU",
+        "processor": "Intel Core i7-1250U",
+        "RAM": "16 GB LPDDR4x-4266 MHz RAM",
+        "storage": "512 GB PCIe Gen4 NVMe TLC M.2 SSD",
+        "graphics": "Intel Iris Xᵉ Graphics",
+        "display_size": "13.3″ WQXGA IPS, multitouch-enabled",
+        "operating_system": "Windows 11 Home",
+        "ports": [
+          "2x Thunderbolt 4 with USB4 Type-C 40Gbps signaling rate (USB Power Delivery, DisplayPort 1.4, HP Sleep and Charge)",
+          "1x 1 SuperSpeed USB Type-A 10Gbps signaling rate (HP Sleep and Charge)",
+          "1x SuperSpeed USB Type-A 10Gbps signaling rate",
+          "1x headphone/microphone"
+        ]
+      },
+      "inclusions": [
+        "HP Backpack",
+        "MS Office Home and Student 2021",
+        "Rechargeable Pen"
+      ],
+      "warranty": {
+        "replacement_period": "Seven (7) Days",
+        "manufacturer_warranty": "Two (2) Years"
+      },
+      "price": {
+        "original_price": "₱75,000.00"
+      }
+    },
+    {
+      "laptop_name": "MSI Thin GF63 11UCX-1478PH",
+      "image_url": "./laptops/gaming laptop/MSI Thin GF63 11UCX-1478PH.png",
+      "laptop_type": "Gaming",
+      "tech_specs": {
+        "model_name": "MSI Thin GF63 11UCX-1478PH",
+        "processor": "Intel® Core™ I7-11800H",
+        "RAM": "8GB DDR4",
+        "storage": "512GB NVMe PCIe Gen3x4 SSD",
+        "graphics": "NVIDIA® GeForce RTX™ 2050 Laptop GPU 4GB GDDR6",
+        "display_size": "15.6″ Full HD",
+        "operating_system": "Windows 11",
+        "keyboard": "Single Backlit Keyboard (Red)",
+        "ports": [
+        "1x Type-C USB3.2 Gen1",
+        "3x Type-A USB3.2 Gen1",
+        "1x HDMI™ (4K @ 30Hz) HDMI™",
+          "1x RJ45"
+        ]
+      },
+      "inclusions": [
+        "MSI Gaming Backpack"
+      ],
+      "warranty": {
+        "replacement_period": "Seven (7) Days",
+        "manufacturer_warranty": "Two (2) Years"
+      },
+      "price": {
+        "original_price": "₱46,500.00"
+      }
+    },
+    {
+      "laptop_name": "Acer Aspire 7 A715-76G-53J9",
+      "image_url": "./laptops/gaming laptop/Acer Aspire 7 A715-76G-53J9.png",
+      "laptop_type": "Gaming",
+      "tech_specs": {
+        "model_name": "Acer Aspire 7 A715-76G-53J9",
+        "processor": "Intel Core i5 – 12450H",
+        "RAM": "8GB 3200 DDR4",
+        "storage": "512GB NVMe SSD",
+        "graphics": "NVIDIA GeForce GTX 1650 4GB GDDR6",
+        "display_size": "15.6inch FHD IPS",
+        "operating_system": "Windows 11 Home",
+        "ports": [
+          "1 X HDMI",
+          "3 X USB 3.2 Gen 1 Type-A Ports",
+          "1 X USB 3.2 Gen 2 Type-C Ports",
+          "1 X USB Type-C",
+          "1 X RJ-45"
+        ]
+      },
+      "inclusions": [
+        "Acer Backpack",
+        "Microsoft Office Home and Student 2021"
+      ],
+      "warranty": {
+        "replacement_period": "Seven (7) Days",
+        "manufacturer_warranty": "Two (2) Years"
+      },
+      "price": {
+        "original_price": "₱43,995.00"
+      }
+    },
+    {
+      "laptop_name": "Gigabyte G5 KF-E3PH333SH",
+      "image_url": "./laptops/gaming laptop/Gigabyte G5 KF-E3PH333SH.png",
+      "laptop_type": "Gaming",
+      "tech_specs": {
+        "model_name": "Gigabyte G5 KF-E3PH333SH",
+        "processor": "Intel Core i5-12500H",
+        "RAM": "8GB DDR4 RAM, 2x DDR4 Slots",
+        "storage": "512GB SSD Gen4, M.2 2280 x 2",
+        "graphics": "NVIDIA GeForce RTX 4060 Laptop GPU 8GB GDDR6",
+        "display_size": "15.6inch FHD 144Hz",
+        "operating_system": "Windows 11 Home",
+        "ports": [
+          "1 x USB 2.0 port (Type A)",
+          "1 x USB 3.2 Gen 1 port (Type A)",
+          "2 x USB 3.2 Gen 2 port (Type C)",
+          "1 x Mini DP 1.4",
+          "1 x HDMI (with HDCP)",
+          "1 x 2-in-1 Audio Jack (Headphone / Microphone)",
+          "1 x Microphone Jack",
+          "1 x RJ-45 LAN port",
+          "1 x DC-in jack",
+          "1 x MicroSD Card Reader"
+        ]
+      },
+      "inclusions": [
+        "Gigabyte Backpack"
+      ],
+      "warranty": {
+        "replacement_period": "Seven (7) Days",
+        "manufacturer_warranty": "Two (2) Years"
+      },
+      "price": {
+        "original_price": "₱66,500.00",
+        "sale_price": "₱65,000.00"
+      }
+    },
+    {
+      "laptop_name": "Acer Predator Helios Neo 16 PHN16-71-59F1",
+      "image_url": "./laptops/gaming laptop/Acer Predator Helios Neo 16 PHN16-71-59F1.png",
+      "laptop_type": "Gaming",
+      "tech_specs": {
+        "model_name": "Acer Predator Helios Neo 16 PHN16-71-59F1",
+        "processor": "Intel Core i5-13500HX",
+        "memory": "8GB Memory",
+        "storage": "512GB SSD",
+        "graphics": "NVIDIA GeForce RTX 4050",
+        "display_size": "16″ WUXGA",
+        "operating_system": "Windows 11 Home"
+      },
+      "warranty": {
+        "replacement_period": "Seven (7) Days",
+        "manufacturer_warranty": "Two (2) Years"
+      },
+      "price": {
+        "original_price": "₱72,000.00",
+        "sale_price": "₱70,500.00"
+      }
+    },
+    {
+      "laptop_name": "HP OMEN GAMING 16-B0174TX",
+      "image_url": "./laptops/gaming laptop/HP OMEN GAMING 16-B0174TX.png",
+      "laptop_type": "Gaming",
+      "tech_specs": {
+        "model_name": "HP Omen Gaming Laptop 16-b0174TX",
+        "processor": "Intel® Core™ i5-11400H",
+        "RAM": "16 GB DDR4-2933 MHz RAM (2 x 8 GB)",
+        "storage": "512 GB PCIe® NVMe™ TLC M.2 SSD",
+        "graphics": "NVIDIA® GeForce RTX™ 3060 Laptop GPU (6 GB GDDR6 dedicated)",
+        "display_size": "16.1″ FHD",
+        "operating_system": "Licensed Windows 11",
+        "ports": [
+          "1 x Thunderbolt™ 4 with USB4™ Type-C® 40Gbps signaling rate (DisplayPort™ 1.4, HP Sleep and Charge)",
+          "1 x SuperSpeed USB Type-A 5Gbps signaling rate",
+          "2 x SuperSpeed USB Type-A 5Gbps signaling rate",
+          "1 x RJ-45",
+          "1 x headphone/microphone combo",
+          "1 x AC smart pin",
+          "1 x Mini DisplayPort™",
+          "1 x HDMI 2.1"
+        ]
+      },
+      "inclusions": [
+        "HP Backpack",
+        "MS Office Home and Student 2021"
+      ],
+      "warranty": {
+        "replacement_period": "Seven (7) Days",
+        "manufacturer_warranty": "Two (2) Years"
+      },
+      "price": {
+        "original_price": "₱72,000.00"
+      }
+    },
+    {
+      "laptop_name": "MSI Katana 17 B13UCXK-276PH",
+      "image_url": "./laptops/gaming laptop/MSI Katana 17 B13UCXK-276PH.png",
+      "laptop_type": "Gaming",
+      "tech_specs": {
+        "model_name": "MSI Katana 17 B13UCXK-276PH",
+        "processor": "Raptor Lake i7-1620H",
+        "memory": "8GB 5200MHz DDR5 Memory (Max of 64GB DDR5 5200Mhz *2 SLOTS)",
+        "storage": "512GB NVMe PCIe SSD Gen4x4 (2x M.2 SSD slot (NVMe PCIe Gen4",
+        "graphics": "Nvidia Geforce RTX 2050, GDDR6 4GB dedicated GPU",
+        "display_size": "17.3″ FHD (1920*1080), 144Hz",
+        "operating_system": "Licensed Windows 11 Hone 64-bit",
+        "keyboard": "With 99 key 4 zone RGB Keyboard!",
+        "ports": [
+          "1 x Type-C (USB3.2 Gen1 / DP)",
+          "2 x Type-A USB3.2 Gen1",
+          "1 x Type-A USB2.0",
+          "1 x HDMI 2.1 (8K @ 60Hz / 4K @ 120Hz)",
+          "1 x RJ45"
+        ]
+      },
+      "inclusions": [
+        "MSI Backpack"
+      ],
+      "warranty": {
+        "replacement_period": "Seven (7) Days",
+        "manufacturer_warranty": "Two (2) Years"
+      },
+      "price": {
+        "original_price": "₱72,000.00",
+        "sale_price": "₱70,500.00"
+      }
+    },
+    {
+      "laptop_name": "Asus VivoBook Go E410KA-BV448W",
+      "image_url": "./laptops/basic and business laptop/Asus VivoBook Go E410KA-BV448W.png",
+      "laptop_type": "Basic",
+      "tech_specs": {
+        "model_name": "Asus VivoBook Go E410KA-BV448W",
+        "processor": "Intel® Celeron® N4500 Processor",
+        "RAM": "4GB DDR4 on board",
+        "storage": "256GB M.2 NVMe™ PCIe® 3.0 SSD",
+        "graphics": "Intel® UHD Graphics",
+        "display_size": "14” HD",
+        "operating_system": "Windows 11 Home",
+        "keyboard": "Backlit Chiclet Keyboard",
+        "ports": [
+          "1x USB 2.0 Type-A",
+          "1x USB 3.2 Gen 1 Type-A",
+          "1x USB 3.2 Gen 1 Type-C",
+          "1x HDMI 1.4",
+          "1x 3.5mm Combo Audio Jack"
+        ]
+      },
+      "inclusions": [
+        "ASUS Backpack"
+      ],
+      "warranty": {
+        "replacement_period": "Seven (7) Days",
+        "manufacturer_warranty": "Two (2) Years"
+      },
+      "price": {
+        "original_price": "₱20,995.00",
+        "sale_price": "₱20,495.00"
+      }
+    },
+    {
+      "laptop_name": "Dell Inspiron 15 3520",
+      "image_url": "./laptops/basic and business laptop/Dell Inspiron 15 3520.png",
+      "laptop_type": "Basic",
+      "tech_specs": {
+        "model_name": "Dell Inspiron 15 3520",
+        "processor": "Intel Core i5 1135G7",
+        "RAM": "8GB RAM DDR4",
+        "storage": "256GB SSD M.2 NVME (faster than HDD)",
+        "graphics": "Intel UHD",
+        "display_size": "15.6″ FHD",
+        "operating_system": "Licensed Windows 11 Home"
+      },
+      "warranty": {
+        "replacement_period": "Seven (7) Days",
+        "manufacturer_warranty": "One (2) Year Manufacturer’s Warranty"
+      },
+      "price": {
+        "original_price": "₱32,995.00"
+      }
+    },
+    {
+      "laptop_name": "HP Laptop 15-fd0130TU",
+      "image_url": "./laptops/basic and business laptop/HP Laptop 15-fd0130TU.png",
+      "laptop_type": "Basic",
+      "tech_specs": {
+        "model_name": "HP Laptop 15-fd0130TU",
+        "processor": "Intel Core i5-1335U",
+        "RAM": "8GB RAM DDR4",
+        "storage": "512GB SSD M.2 NVME (faster than HDD)",
+        "graphics": "Intel UHD",
+        "display_size": "15.6″ FHD",
+        "operating_system": "Licensed Windows 11 Home"
+      },
+      "warranty": {
+        "replacement_period": "Seven (7) Days",
+        "manufacturer_warranty": "One (2) Year Manufacturer’s Warranty"
+      },
+      "price": {
+        "original_price": "₱39,000.00"
+      }
+    },
+    {
+      "laptop_name": "Acer Swift 3 SF314-512-50XM",
+      "image_url": "./laptops/basic and business laptop/Acer Swift 3 SF314-512-50XM.png",
+      "laptop_type": "Basic",
+      "tech_specs": {
+        "model_name": "Acer Swift 3 SF314-512-50XM",
+        "processor": "Intel Core i5-1240P",
+        "RAM": "8GB RAM DDR4",
+        "storage": "512GB SSD M.2 NVME (faster than HDD)",
+        "graphics": "Intel UHD",
+        "display_size": "14″ QHD",
+        "operating_system": "Licensed Windows 11 Home"
+      },
+      "warranty": {
+        "replacement_period": "Seven (7) Days",
+        "manufacturer_warranty": "One (2) Year Manufacturer’s Warranty"
+      },
+      "price": {
+        "original_price": "₱37,995.00"
+      }
+    },
+    {
+      "laptop_name": "Asus VivoBook Go E410KA-BV448W1",
+      "image_url": "./laptops/basic and business laptop/Asus VivoBook Go E410KA-BV448W.png",
+      "laptop_type": "Basic",
+      "tech_specs": {
+        "model_name": "Asus VivoBook Go E410KA-BV448W",
+        "processor": "Intel® Celeron® N4500 Processor",
+        "RAM": "4GB DDR4 on board",
+        "storage": "256GB M.2 NVMe™ PCIe® 3.0 SSD",
+        "graphics": "Intel® UHD Graphics",
+        "display_size": "14” HD",
+        "operating_system": "Windows 11 Home",
+        "keyboard": "Backlit Chiclet Keyboard",
+        "ports": [
+          "1x USB 2.0 Type-A",
+          "1x USB 3.2 Gen 1 Type-A",
+          "1x USB 3.2 Gen 1 Type-C",
+          "1x HDMI 1.4",
+          "1x 3.5mm Combo Audio Jack"
+        ]
+      },
+      "inclusions": [
+        "ASUS Backpack"
+      ],
+      "warranty": {
+        "replacement_period": "Seven (7) Days",
+        "manufacturer_warranty": "Two (2) Years"
+      },
+      "price": {
+        "original_price": "₱20,995.00",
+        "sale_price": "₱20,495.00"
+      }
+    },
+    {
+      "laptop_name": "HP Probook x360 G5 EE",
+      "image_url": "./laptops/basic and business laptop/HP Probook x360 G5 EE.png",
+      "laptop_type": "Basic",
+      "price": {
+        "original_price": "₱16,000.00"
+      }
+    }
+  ]
+}

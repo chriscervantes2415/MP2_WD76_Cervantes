@@ -1,0 +1,250 @@
+/* Custom CSS for Navigation Bar */
+
+.stretched-img {
+  width: 100%;
+  height: auto;
+}
+
+.navbar {
+  background-color: #f8f9fa !important;
+  padding: 20px 0 !important;
+}
+
+.navbar-brand {
+  font-size: 50px !important;
+}
+
+.navbar-nav .nav-link {
+  font-size: 18px !important;
+  color: #333 !important;
+  padding: 15px 20px !important;
+  transition: color 0.3s !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: green !important;
+}
+
+.navbar-toggler-icon {
+  background-color: transparent !important;
+}
+
+.navbar-toggler:hover .navbar-toggler-icon {
+  background-color: #007bff !important;
+}
+
+#logo {
+  width: 200px !important;
+  height: auto !important;
+}
+/* Carousel Hero */
+#ccccarousel-item .carousel-indicators li {
+  margin-top: -50px !important;
+  background-color: #59ab6e !important;
+}
+
+#cccarousel-item .carousel-control-next i,
+#cccarousel-item .carousel-control-prev i {
+  color: gray !important;
+  font-size: 2.8em !important;
+  transition: color 0.3s; /* Add a smooth transition effect */
+}
+
+#cccarousel-item .carousel-control-next i:hover,
+#cccarousel-item .carousel-control-prev i:hover {
+  color: #59ab6e !important; /* Change the color when hovered */
+}
+
+/* Carousel Brand */
+.tempaltemo-carousel .h1 {
+  font-size: 0.5em !important;
+  color: #000 !important;
+}
+.carousel-background {
+  background-color: lightgray !important;
+}
+
+.white {
+  color: white !important;
+}
+.white:hover {
+  color: green !important;
+}
+/* carousel indicator */
+.carousel-indicators .active {
+  color: green !important;
+}
+/* product style */
+/* Apply the hover effect to product images */
+.product-card img {
+  transition: transform 0.3s !important;
+}
+
+.product-card:hover img {
+  transform: scale(1.1) !important;
+}
+
+/* Add overlay styles */
+.overlay {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  opacity: 0 !important;
+  transition: opacity 0.3s !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.product-card:hover .overlay {
+  opacity: 1 !important;
+}
+
+.overlay-content {
+  text-align: center !important;
+  color: white !important;
+}
+
+/* Add some styling to the list group */
+.list-group {
+  background-color: #f8f9fa !important;
+  border: none !important;
+  border-radius: 10px !important;
+  margin-top: 20px !important;
+}
+
+.list-group-item.active {
+  background-color: green !important;
+  border-color: green !important;
+}
+
+.list-group-item {
+  cursor: pointer !important;
+}
+
+/* Style for category heading */
+#category-heading {
+  font-weight: bold !important;
+  font-size: 1.2rem !important;
+}
+
+/* Hover effect on list items */
+.list-group-item:not(.active):hover {
+  background-color: #e9ecef !important;
+}
+
+/* card hover */
+.card:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* footer */
+footer {
+  background: linear-gradient(180deg, #343a40 0%, #000000 100%) !important;
+}
+.footer-icons a:hover {
+  color: #17a2b8 !important; /* Change to your desired hover color */
+}
+
+/* Onscroll button */
+.scroll-to-top {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  background-color: green !important;
+  color: white !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  cursor: pointer !important;
+  opacity: 0.7 !important;
+  transition: opacity 0.3s ease-in-out !important;
+}
+
+.scroll-to-top:hover {
+  opacity: 1;
+}
+
+
+
+
+/* Comparison section styles */
+.comparison-section {
+    padding: 50px 0;
+}
+
+.product-card {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.product-card img {
+    transition: transform 0.3s;
+}
+
+.product-card:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-card:hover .overlay {
+    opacity: 1;
+}
+
+.overlay-content {
+    text-align: center;
+    color: white;
+}
+
+/* Comparison result section styles */
+.comparison-result-section {
+    padding: 50px 0;
+}
+
+.product-details {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+}
+
+.cards {
+    width: 100%; 
+    max-width: 400px; 
+}
+
+
+
+
